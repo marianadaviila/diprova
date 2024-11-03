@@ -731,14 +731,19 @@ body {
     }
 
     /* Evento Section */
-    .evento-section {
-        padding: 40px 20px; /* Reduce el padding */
+    .evento-section .evento-text h1 .bold,
+    .evento-section .evento-text h1 .italic {
+        display: block; /* Asegura que las palabras estén separadas */
+        margin-bottom: 5px; /* Espacio entre "Member" y "Launch" */
     }
-    .evento-section .evento-text h1 {
-        font-size: 2.5em;
+
+    .evento-section .register-btn {
+        margin-bottom: 20px; /* Agrega espacio debajo del botón */
     }
-    .evento-section .evento-image .rounded-image {
-        height: 300px; /* Ajusta la altura de la imagen */
+
+    .evento-section .evento-image {
+        margin-top: 20px; /* Espacio superior para separar la imagen del botón */
+        margin-bottom: 0; /* Elimina el espacio excesivo debajo de la imagen */
     }
 
     /* Beneficios Section */
@@ -787,6 +792,12 @@ body {
     /* Evento Section */
     .evento-section .evento-text h1 {
         font-size: 2em;
+    }
+    .evento-section .register-btn {
+        margin-bottom: 20px; /* Agrega espacio debajo del botón */
+    }
+    .evento-section .evento-image {
+        margin-top: 20px; /* Espacio superior para separar la imagen */
     }
 
     /* Inscribete Section */
