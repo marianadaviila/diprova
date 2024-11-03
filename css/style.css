@@ -705,151 +705,137 @@ body {
     background-color: #b80000;
 }
 
-/* General adjustments for responsiveness */
 @media (max-width: 1200px) {
     .container, .beneficios-section, .planes-section, .formulario-section, .seguridad-section {
-        padding: 30px 15px; /* Reduce el padding para todas las secciones */
+        padding: 30px 15px;
     }
 }
 
-/* Tablets and small desktops */
 @media (max-width: 992px) {
-    /* Header */
     .navbar-nav {
-        flex-direction: column; /* Apila los elementos del menú */
+        flex-direction: column;
     }
 
-    /* Hero Section */
     .hero-section .hero-text h1 {
-        font-size: 40px; /* Reduce el tamaño del título */
+        font-size: 40px;
     }
     .hero-section .hero-text p {
-        font-size: 16px; /* Reduce el tamaño del subtítulo */
+        font-size: 16px;
     }
     .hero-section .position-relative {
-        padding-bottom: 20%; /* Ajusta el espaciado */
+        padding-bottom: 20%;
     }
 
-    /* Evento Section */
     .evento-section .evento-text h1 .bold,
     .evento-section .evento-text h1 .italic {
-        display: block; /* Asegura que las palabras estén separadas */
-        margin-bottom: 5px; /* Espacio entre "Member" y "Launch" */
+        display: block;
+        margin-bottom: 5px;
     }
 
     .evento-section .register-btn {
-        margin-bottom: 20px; /* Agrega espacio debajo del botón */
+        margin-bottom: 20px;
     }
 
     .evento-section .evento-image {
-        margin-top: 20px; /* Espacio superior para separar la imagen del botón */
-        margin-bottom: 0; /* Elimina el espacio excesivo debajo de la imagen */
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 
-    /* Beneficios Section */
-    .beneficios-section .row {
-        flex-direction: column; /* Apila las tarjetas */
-    }
-
-    /* Planes Section */
+    .beneficios-section .row,
     .planes-section .row {
-        flex-direction: column; /* Apila las tarjetas */
+        flex-direction: column;
     }
 
-    /* Formulario Section */
     .formulario-section input, .formulario-section select {
-        width: 100%; /* Asegura que los campos ocupen todo el ancho */
-        margin-bottom: 10px; /* Espaciado entre los campos */
+        width: 100%;
+        margin-bottom: 10px;
     }
 
-    /* Seguridad Section */
     .seguridad-section .container {
-        flex-direction: column; /* Apila la imagen y el texto */
-        max-width: 100%; /* Ajusta el ancho para pantallas pequeñas */
+        flex-direction: column;
+        max-width: 100%;
     }
     .seguridad-section h2, .seguridad-section h4, .seguridad-section .nota-final {
-        text-align: center; /* Centra el texto */
+        text-align: center;
     }
 }
 
-/* Smartphones */
 @media (max-width: 768px) {
     .main-header {
-        padding-top: 10px; /* Reduce el padding superior */
+        padding-top: 10px;
     }
 
-    /* Hero Section */
     .hero-section {
-        padding: 10% 5%; /* Reduce el padding */
+        padding: 10% 5%;
     }
     .hero-section .hero-text h1 {
-        font-size: 32px;
+        font-size: 36px;
     }
     .hero-section .hero-btn {
-        padding: 8px 20px; /* Reduce el tamaño del botón */
+        padding: 8px 20px;
     }
 
-    /* Evento Section */
-    .evento-section .evento-text h1 {
-        font-size: 2em;
+    .evento-section {
+        padding: 20px 15px;
     }
+	
+	.evento-section .evento-text h1 {
+        font-size: auto;
+		margin-right: auto;
+        width: 90%; 
+    }
+
     .evento-section .register-btn {
-        margin-bottom: 20px; /* Agrega espacio debajo del botón */
+        margin-bottom: 20px;
     }
     .evento-section .evento-image {
-        margin-top: 20px; /* Espacio superior para separar la imagen */
+        margin-top: 20px;
     }
 
-    /* Inscribete Section */
     .inscribete-section h1 {
-        font-size: 28px; /* Reduce el tamaño del título */
+        font-size: 28px;
     }
     .inscribete-section img {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-        padding: 5%; /* Reduce el padding */
+        width: 100%;
+        padding: 5%;
     }
 
-    /* Beneficios and Planes Sections */
-    .beneficios-section .beneficio-card, .planes-section .plan-card {
-        margin-bottom: 20px; /* Espacio entre tarjetas */
+    .beneficios-section .beneficio-card,
+    .planes-section .plan-card {
+        margin-bottom: 20px;
     }
 
-    /* Seguridad Section */
     .seguridad-section .col-lg-8 {
-        max-width: 100%; /* Ajusta el ancho */
+        max-width: 100%;
     }
 }
 
-/* Small smartphones */
 @media (max-width: 576px) {
     .hero-section .hero-text h1 {
         font-size: 24px;
     }
 
-    /* Evento Section */
     .evento-section .evento-text .benefits-list li {
-        font-size: 14px; /* Reduce el tamaño del texto */
+        font-size: 14px;
     }
 
-    /* Formulario Section */
     .formulario-section h2 {
-        font-size: 30px; /* Reduce el tamaño del título */
+        font-size: 30px;
     }
 
-    /* Seguridad Section */
-    .seguridad-section .container, .seguridad-section .col-lg-8 {
-        padding: 10px; /* Reduce el padding */
+    .seguridad-section .container,
+    .seguridad-section .col-lg-8 {
+        padding: 10px;
     }
     .seguridad-section h2 {
-        font-size: 36px; /* Reduce el tamaño del título */
+        font-size: 36px;
     }
 
-    /* Footer */
     .main-footer .row {
-        flex-direction: column; /* Apila los elementos del footer */
-        text-align: center; /* Centra el contenido */
+        flex-direction: column;
+        text-align: center;
     }
     .main-footer .social-icons {
-        justify-content: center; /* Centra los iconos sociales */
+        justify-content: center;
     }
 }
