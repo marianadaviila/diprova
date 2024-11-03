@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-rojo: #EB0A2A;
+    --color-shadow: rgba(0, 0, 0, 0.30);
+    --color-secundario: #4b6372;
+    --color-negro: #000000;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.navbar-logo {
+    max-width: 150px; 
+    height: auto; 
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: normal;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal; 
+}
+
+.main-header {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    background: linear-gradient(90deg, #ea0b29, #910806);
+    padding-top: 0;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 1000;
+    transition: background 0.3s ease, padding-top 0.3s ease;
+}
+
+.sticky {
+    position: fixed;
+    background: linear-gradient(90deg, #ea0b29, #910806);
+    padding-top: 0;
+    z-index: 1000;
+}
+
+.hero-section {
+    background-image: url("../img/bg_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 5% 5%;
+}
+
+.hero-section .hero-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 25%; 
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-section .hero-text p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.hero-section .position-relative {
+    padding-bottom: 30%; 
+    margin-top: 30%;
+    width: 100%;
+}
+
+.hero-section .hero-btn {
+    background-color: #fff;
+    color: var(--color-rojo);
+    padding: 8px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section .hero-btn:hover {
+    background-color: var(--color-rojo);
+    color: #fff;
+}
+
+.hero-subtext {
+    max-width: 550px;
+    font-size: 20px; 
+    line-height: 1.5;
+}
+
+.evento-section {
+    padding: 70px 120px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; 
+}
+
+.evento-section .evento-text h1 {
+    font-size: 3.5em;
+    color: var(--color-rojo);
+    line-height: 0.65;
+    margin: 0;
+}
+
+.evento-section .evento-text h1 .bold {
+    font-weight: bold;
+    display: block;
+}
+
+.evento-section .evento-text h1 .italic {
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+    margin-top: -20px;
+}
+
+.evento-section .evento-text .intro-text {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.evento-section .evento-text .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 20px;
+}
+
+.evento-section .evento-text .benefits-list li {
+    font-size: 1.1em;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 25px;
+    color: var(--color-rojo);
+}
+
+.evento-section .evento-text .benefits-list li::before {
+    content: "•";
+    color: var(--color-rojo);
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -0.3em;
+}
+
+.evento-section .event-date {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.3em;
+    color: var(--color-rojo);
+    margin: 20px 0;
+}
+
+.evento-section .event-date i {
+    font-size: 2em;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.evento-section .event-date div {
+    line-height: 0.6;
+    margin-top: 10px;
+}
+
+.evento-section .event-date strong {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.evento-section .event-date .time-text {
+    font-size: 1em;
+    font-weight: normal;
+    color: #555;
+}
+
+.evento-section .register-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--color-rojo);
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.evento-section .register-btn:hover {
+    background-color: #fff;
+    color: var(--color-rojo);
+}
+
+.evento-section .evento-image {
+    position: relative;
+    overflow: hidden;
+    margin-left: 0px; 
+    height: 500px;
+}
+
+.evento-section .evento-image .rounded-image {
+    width: auto; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 40px 0 0 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.evento-section .evento-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%; 
+    background: linear-gradient(to left, white, transparent);
+}
+
+.inscribete-section {
+    background: linear-gradient(0deg, rgba(255, 113, 113, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 8% 0;
+    text-align: center;
+}
+
+.inscribete-section h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--color-rojo);
+}
+
+.inscribete-section img {
+    padding: 5% 15%;
+}
+
+.inscribete-section .inscripcion-btn {
+    width: 13rem;
+    background-color: var(--color-rojo);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.inscribete-section .inscripcion-btn:hover {
+    background-color: #fff; 
+    color: var(--color-rojo); 
+}
+
+.beneficios-section {
+    background-image: url("../img/bg_beneficios.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 60px;
+}
+
+.beneficios-section .beneficios-titulo {
+    text-align: center;
+    color: #fff;
+}
+
+.beneficios-section .beneficios-titulo h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.beneficios-section .beneficios-titulo p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.beneficios-section .beneficio-card {
+    text-align: center;
+    background-color: var(--color-rojo);
+    color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beneficios-section .beneficio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.beneficios-section .beneficio-card .beneficio-icon {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3.5em; 
+}
+
+.beneficios-section .beneficio-card h3 {
+    font-size: 1.5em; 
+    margin-bottom: 15px; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.beneficios-section .beneficio-card p {
+    font-size: 1em; 
+    line-height: 1.4;
+}
+
+.planes-section {
+    background-image: url("../img/bg_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 5%;
+    padding: 5%;
+}
+
+.planes-section h2 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.plan-card {
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 700px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card:hover {
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); 
+}
+
+.plan-card h3 {
+    font-weight: 900;
+}
+
+.plan-card p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.plan-basic {
+    color: #b20301;
+}
+
+.plan-basic h3,
+.plan-basic p,
+.plan-basic .plan-info,
+.plan-basic .plan-link {
+    color: #b20301;
+}
+
+.plan-basic .credito {
+    margin-top: -10px; 
+}
+
+.plan-basic .plan-info {
+    text-align: justify;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.plan-basic .iconos {
+    margin-top: 15px;
+}
+
+.plan-basic .plan-btn {
+    background-color: #b20301;
+    color: #fff;
+}
+
+.plan-premium {
+    color: #4b6372;
+}
+
+.plan-premium h3,
+.plan-premium p,
+.plan-premium .plan-info,
+.plan-premium .plan-link {
+    color: #4b6372;
+}
+
+.plan-premium .plan-btn {
+    background-color: #4b6372;
+    color: #fff;
+}
+
+.plan-vip {
+    color: black;
+}
+
+.plan-vip h3,
+.plan-vip p,
+.plan-vip .plan-info,
+.plan-vip .plan-link {
+    color: black;
+}
+
+.plan-vip .plan-btn {
+    background-color: black;
+    color: #fff;
+}
+
+.plan-card .iconos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.plan-card .iconos i {
+    margin-right: 8px;
+    font-size: 0.9em; 
+}
+
+.plan-card .plan-info {
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px 0;
+    line-height: 1.7;
+}
+
+.plan-card .plan-link {
+    text-decoration: underline;
+    font-weight: 600;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.plan-card .plan-link:hover {
+    color: var(--color-rojo);
+}
+
+.plan-btn {
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.plan-btn:hover {
+    background-color: #fff;
+    color: inherit;
+}
+
+.formulario-section {
+    background-image: url("../img/bg_formu.png"); 
+    background-size: cover;
+    background-position: center;
+    padding: 8% 0; 
+    text-align: center;
+    color: #fff;
+}
+
+.formulario-section h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.formulario-section .form-control,
+.formulario-section .form-select {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.formulario-section .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.formulario-section .form-check-input {
+    margin-right: 10px; 
+}
+
+.formulario-section .form-check-label {
+    color: white;
+}
+
+.formulario-section .formulario-btn {
+    background-color: #fff;
+    color: var(--color-rojo);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.formulario-section .formulario-btn:hover {
+    background-color: var(--color-rojo);
+    color: #fff;
+}
+
+
+.seguridad-section {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.seguridad-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto; 
+}
+
+.seguridad-section h2 {
+    color: #b20301;
+    font-weight: bold;
+    font-size: 67px;
+    margin-bottom: 10px;
+}
+
+.seguridad-section h4 {
+    color: #b20301;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.seguridad-section .seguridad-list {
+    list-style: none;
+    padding: 0;
+}
+
+.seguridad-section .seguridad-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.seguridad-section .seguridad-list i {
+    color: #b20301;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.seguridad-section .seguridad-list p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.seguridad-section .col-lg-8 {
+    max-width: 60%; 
+    margin-left: auto;
+    text-align: justify;
+}
+
+.seguridad-section .nota-final {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #000;
+}
+
+
+.main-footer {
+    background-color: var(--color-rojo);
+    color: #fff;
+    padding: 8% 0;
+}
+
+.solicitud-section {
+    background: rgb(255, 113, 113);
+    background: linear-gradient(0deg, rgba(255, 113, 113, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 8% 0;
+    text-align: center;
+}
+
+.solicitud-section h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--color-rojo);
+    margin-bottom: 20px;
+}
+
+.solicitud-section .form-control {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.solicitud-section .form-select {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.solicitud-section .form-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.solicitud-section .form-check-label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.solicitud-section .formulario-btn {
+    width: 13rem;
+    background-color: var(--color-rojo);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.solicitud-section .formulario-btn:hover {
+    background-color: #fff;
+    color: var(--color-rojo);
+}
+
+.main-footer h3 {
+    font-weight: bold;
+}
+
+.main-footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.main-footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-rojo);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.main-footer .social-icons a:hover {
+    background-color: #b80000;
+}
+
+/* General adjustments for responsiveness */
+@media (max-width: 1200px) {
+    .container, .beneficios-section, .planes-section, .formulario-section, .seguridad-section {
+        padding: 30px 15px; /* Reduce el padding para todas las secciones */
+    }
+}
+
+/* Tablets and small desktops */
+@media (max-width: 992px) {
+    /* Header */
+    .navbar-nav {
+        flex-direction: column; /* Apila los elementos del menú */
+    }
+
+    /* Hero Section */
+    .hero-section .hero-text h1 {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+    .hero-section .hero-text p {
+        font-size: 16px; /* Reduce el tamaño del subtítulo */
+    }
+    .hero-section .position-relative {
+        padding-bottom: 20%; /* Ajusta el espaciado */
+    }
+
+    /* Evento Section */
+    .evento-section {
+        padding: 40px 20px; /* Reduce el padding */
+    }
+    .evento-section .evento-text h1 {
+        font-size: 2.5em;
+    }
+    .evento-section .evento-image .rounded-image {
+        height: 300px; /* Ajusta la altura de la imagen */
+    }
+
+    /* Beneficios Section */
+    .beneficios-section .row {
+        flex-direction: column; /* Apila las tarjetas */
+    }
+
+    /* Planes Section */
+    .planes-section .row {
+        flex-direction: column; /* Apila las tarjetas */
+    }
+
+    /* Formulario Section */
+    .formulario-section input, .formulario-section select {
+        width: 100%; /* Asegura que los campos ocupen todo el ancho */
+        margin-bottom: 10px; /* Espaciado entre los campos */
+    }
+
+    /* Seguridad Section */
+    .seguridad-section .container {
+        flex-direction: column; /* Apila la imagen y el texto */
+        max-width: 100%; /* Ajusta el ancho para pantallas pequeñas */
+    }
+    .seguridad-section h2, .seguridad-section h4, .seguridad-section .nota-final {
+        text-align: center; /* Centra el texto */
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .main-header {
+        padding-top: 10px; /* Reduce el padding superior */
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 10% 5%; /* Reduce el padding */
+    }
+    .hero-section .hero-text h1 {
+        font-size: 32px;
+    }
+    .hero-section .hero-btn {
+        padding: 8px 20px; /* Reduce el tamaño del botón */
+    }
+
+    /* Evento Section */
+    .evento-section .evento-text h1 {
+        font-size: 2em;
+    }
+
+    /* Inscribete Section */
+    .inscribete-section h1 {
+        font-size: 28px; /* Reduce el tamaño del título */
+    }
+    .inscribete-section img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+        padding: 5%; /* Reduce el padding */
+    }
+
+    /* Beneficios and Planes Sections */
+    .beneficios-section .beneficio-card, .planes-section .plan-card {
+        margin-bottom: 20px; /* Espacio entre tarjetas */
+    }
+
+    /* Seguridad Section */
+    .seguridad-section .col-lg-8 {
+        max-width: 100%; /* Ajusta el ancho */
+    }
+}
+
+/* Small smartphones */
+@media (max-width: 576px) {
+    .hero-section .hero-text h1 {
+        font-size: 24px;
+    }
+
+    /* Evento Section */
+    .evento-section .evento-text .benefits-list li {
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    /* Formulario Section */
+    .formulario-section h2 {
+        font-size: 30px; /* Reduce el tamaño del título */
+    }
+
+    /* Seguridad Section */
+    .seguridad-section .container, .seguridad-section .col-lg-8 {
+        padding: 10px; /* Reduce el padding */
+    }
+    .seguridad-section h2 {
+        font-size: 36px; /* Reduce el tamaño del título */
+    }
+
+    /* Footer */
+    .main-footer .row {
+        flex-direction: column; /* Apila los elementos del footer */
+        text-align: center; /* Centra el contenido */
+    }
+    .main-footer .social-icons {
+        justify-content: center; /* Centra los iconos sociales */
+    }
+}
