@@ -769,7 +769,7 @@ body {
         padding: 10% 5%;
     }
     .hero-section .hero-text h1 {
-        font-size: 45px;
+        font-size: 45px !important;
     }
     .hero-section .hero-btn {
         padding: 8px 20px;
