@@ -705,7 +705,208 @@ body {
     background-color: #b80000;
 }
 
-@media (max-width: 1200px) {
+/* Tablet */
+@media (min-width: 321px) and (max-width: 768px) {
+    .main-header {
+        padding-top: 10px;
+    }
+
+    .hero-section {
+        padding: 10% 5%;
+    }
+    .hero-section .hero-text h1 {
+        font-size: 45px !important;
+    }
+    .hero-section .hero-btn {
+        padding: 8px 20px;
+    }
+
+    .evento-section {
+        padding: 20px 15px;
+    }
+
+    .evento-section .evento-text h1 {
+        font-size: 36px;
+        margin-right: auto;
+        width: 90%; 
+    }
+
+    .evento-section .register-btn {
+        margin-bottom: 20px;
+    }
+    .evento-section .evento-image {
+        margin-top: 20px;
+    }
+
+    .inscribete-section h1 {
+        font-size: 28px;
+    }
+    .inscribete-section img {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .beneficios-section .beneficio-card,
+    .planes-section .plan-card {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .plan-iconos .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .plan-iconos .col-2 {
+        flex: 0 0 10%;
+        width: 10%;
+    }
+
+    .plan-iconos .col-10 {
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .plan-iconos i {
+        font-size: 1.3rem;
+    }
+
+    .plan-info {
+        line-height: 1.5;
+        font-size: 14px;
+        margin: 0; 
+    }
+
+    .form-check-input {
+        width: 20px !important; 
+        height: 20px !important;
+        border-radius: 0 !important;
+    }
+
+    .seguridad-section .col-lg-8 {
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .seguridad-section img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .main-footer .container {
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .main-footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-footer .col-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-footer h3 {
+        text-align: center;
+    }
+
+    .main-footer p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .main-footer .social-icons {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .main-footer .social-icons a {
+        margin: 0 5px;
+    }
+
+    .main-footer input#suscripcion {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+    .hero-section .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .evento-section .evento-text .benefits-list li {
+        font-size: 14px;
+    }
+
+    .formulario-section h2 {
+        font-size: 30px;
+    }
+
+    .plan-iconos i {
+        font-size: 1.2rem; 
+    }
+
+    .seguridad-section .container,
+    .seguridad-section .col-lg-8 {
+        padding: 10px;
+    }
+    .seguridad-section h2 {
+        font-size: 36px;
+    }
+
+    .main-footer .container {
+        text-align: center;
+    }
+
+    .main-footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-footer .col-3 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .main-footer h3 {
+        text-align: center;
+    }
+
+    .main-footer p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .main-footer .social-icons {
+        justify-content: center;
+        margin: 8px 0;
+    }
+
+    .main-footer .social-icons a {
+        margin: 0 4px;
+    }
+
+    .main-footer input#suscripcion {
+        width: 95%;
+        margin: 8px auto;
+    }
+	.form-check-input {
+        width: 18px !important; 
+        height: 18px !important;
+        border-radius: 0 !important;
+    }
+}
+
+/*@media (max-width: 1200px) {
     .container, .beneficios-section, .planes-section, .formulario-section, .seguridad-section {
         padding: 30px 15px;
     }
